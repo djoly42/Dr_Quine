@@ -6,18 +6,18 @@
 #    By: djoly <djoly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/11 13:53:42 by djoly             #+#    #+#              #
-#    Updated: 2018/02/23 10:24:09 by djoly            ###   ########.fr        #
+#    Updated: 2018/02/23 16:37:05 by djoly            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Colleen
+NAME	= Grace
 
-FILES	= Colleen.c \
+FILES	= Grace.c \
 
 SRCS	= $(addprefix , $(FILES))
 
 OBJS	= $(SRCS:src/%.c=.obj/%.o)
-FLAGS	= -Wall -Wextra -Werror
+#FLAGS	= -Wall -Wextra -Werror
 CC		= gcc
 
 all: $(NAME)
