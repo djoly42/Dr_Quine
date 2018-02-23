@@ -6,21 +6,23 @@
 #    By: djoly <djoly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/11 13:53:42 by djoly             #+#    #+#              #
-#    Updated: 2018/02/23 16:37:05 by djoly            ###   ########.fr        #
+#    Updated: 2018/02/23 18:25:10 by djoly            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Grace
+NAME_GRACE	= Grace
 
-FILES	= Grace.c \
+NAME_COLLEEN	= Colleen
 
-SRCS	= $(addprefix , $(FILES))
+FILES_GRACE	= Grace.c
+
+FILES_COLLEEN	= Colleen.c
 
 OBJS	= $(SRCS:src/%.c=.obj/%.o)
 #FLAGS	= -Wall -Wextra -Werror
 CC		= gcc
 
-all: $(NAME)
+all: $(NAME_GRACE) $(NAME_COLLEEN)
 
 $(NAME): $(OBJS)
 		@echo "\033[91mCompiling \033[97m"
