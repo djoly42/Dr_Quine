@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define I 5
 #define KID "Grace_kid.c"
-#define STR "#include <fcntl.h>%c#include <stdlib.h>%c#include <stdio.h>%c#define KID %cGrace_kid.c%c%c#define STR %c%s%c%c#define MAIN int main(void){FILE *fp;fp=fopen(KID, %cw%c);fprintf(fp,STR,10,10,10,34,34,10,34,STR,34,10,34,34,10,10,9,10,10);fclose(fp);}%c/*%c%coutside%c*/%cMAIN"
+#define STR "#include <fcntl.h>%c#include <stdlib.h>%c#include <stdio.h>%c#define I %d%c#define KID %cGrace_kid.c%c%c#define STR %c%s%c%c#define MAIN int main(void){FILE *fp;fp=fopen(KID, %cw%c);fprintf(fp,STR,10,10,10,34,34,10,34,STR,34,10,34,34,10,10,9,10,10);fclose(fp);}%c/*%c%coutside%c*/%cMAIN"
 //#define MAIN int main(void){FILE *fp;fp=fopen(KID, "w");fprintf(fp,STR,10,10,10,34,34,10,34,STR,34,10,34,34,10,10,9,10,10);fclose(fp);}
 /*
 	outside
@@ -20,7 +20,7 @@ int main(void){
 	FILE *fp;
 	asprintf(&name, "Sully%d.c",--i);
 	fp=fopen(name, "w");
-	fprintf(fp,STR,10,10,10,34,34,10,34,STR,34,10,34,34,10,10,9,10,10);
+	fprintf(fp,STR,10,10,10,i,10,34,34,10,34,STR,34,10,34,34,10,10,9,10,10);
 	fclose(fp);
 	return (0);
 }
