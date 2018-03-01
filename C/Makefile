@@ -6,7 +6,7 @@
 #    By: djoly <djoly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/11 13:53:42 by djoly             #+#    #+#              #
-#    Updated: 2018/02/23 18:44:52 by djoly            ###   ########.fr        #
+#    Updated: 2018/03/01 16:19:26 by djoly            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ $(NAME_COLLEEN):
 		@echo "\033[90mDone \033[97m"
 
 $(NAME_SULLY):
-		@echo "\033[91mCompiling colleen\033[97m"
+		@echo "\033[91mCompiling Sully\033[97m"
 		@$(CC) -o $(NAME_SULLY) $(FILE_SULLY)
 		@echo "\033[90mDone \033[97m"
 
